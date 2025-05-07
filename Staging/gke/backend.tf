@@ -1,9 +1,9 @@
-/*terraform{
+terraform{
   cloud {
-    organization = "Revolab-AI"
+    organization = "tfexample"
 
     workspaces {
-      name = "Reva-Staging"
+      name = "tf-example"
     }
   }
-}*/
+}
