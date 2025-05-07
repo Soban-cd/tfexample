@@ -1,6 +1,7 @@
 provider "google" {
   project = var.project_id
   region  = var.region
+  credentials = jsondecode(var.gcp_credentials)
 }
 
 provider "kubernetes" {
