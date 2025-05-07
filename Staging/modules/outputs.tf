@@ -6,6 +6,10 @@ output "project_id" {
   value       = var.project_id
 }
 
+output "gcp_credentials" {
+  value       = var.gcp_credentials
+}
+
 output "cluster_id" {
   description = "GKE Cluster ID"
   value       = google_container_cluster.gke.id
