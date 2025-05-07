@@ -8,7 +8,9 @@ module "gke_staging" {
   subnet_cidr           = "10.0.1.0/24"
   cluster_name          = "pp-stg-1"
   master_ipv4_cidr_block = "192.168.1.0/28"
-  gcp_credentials = jsondecode(gke_staging.var.gcp_credentials)
+}
+variable "gcp_credentials" {
+  type = string
 }
 
 resource "google_container_node_pool" "medium" {
