@@ -3,7 +3,7 @@ terraform{
     organization = "tfexample"
 
     workspaces {
-      name = "tf-example"
+      name = "tfexample"
     }
   }
 }
