@@ -6,9 +6,9 @@ output "project_id" {
   value       = var.project_id
 }
 
-/*output "gcp_credentials" {
-  value       = var.gcp_credentials
-}*/
+output "GOOGLE_CREDENTIALS" {
+  value       = var.GOOGLE_CREDENTIALS
+}
 
 output "cluster_id" {
   description = "GKE Cluster ID"
