@@ -4,7 +4,7 @@ provider "google" {
   credentials = jsondecode(var.GCP_CREDENTIALS)
 }
 
-variable "gcp_credentials" {
+variable "GCP_CREDENTIALS" {
   type = string
 }
 
