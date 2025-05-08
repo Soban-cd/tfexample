@@ -6,7 +6,7 @@ on:
       - main  # or your deployment branch
 
 env:
-  TF_VAR_gcp_credentials: ${{ secrets.GCP_CREDENTIALS }}
+  TF_VAR_gcp_credentials: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
 
 jobs:
   terraform:

@@ -44,4 +44,5 @@ variable "master_ipv4_cidr_block" {
 
 variable "GOOGLE_APPLICATION_CREDENTIALS" {
   type = string
+  sensitive   = true
 }
