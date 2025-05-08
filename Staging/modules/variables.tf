@@ -42,6 +42,6 @@ variable "master_ipv4_cidr_block" {
   type        = string
 }
 
-variable "GOOGLE_CREDENTIALS" {
+variable "GOOGLE_APPLICATION_CREDENTIALS" {
   type = string
 }

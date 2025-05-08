@@ -6,8 +6,8 @@ output "project_id" {
   value       = var.project_id
 }
 
-output "GOOGLE_CREDENTIALS" {
-  value       = var.GOOGLE_CREDENTIALS
+output "GOOGLE_APPLICATION_CREDENTIALS" {
+  value       = var.GOOGLE_APPLICATION_CREDENTIALS
 }
 
 output "cluster_id" {
