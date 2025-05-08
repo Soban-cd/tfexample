@@ -6,10 +6,6 @@ output "project_id" {
   value       = var.project_id
 }
 
-output "GOOGLE_APPLICATION_CREDENTIALS" {
-  value       = var.GOOGLE_APPLICATION_CREDENTIALS
-}
-
 output "cluster_id" {
   description = "GKE Cluster ID"
   value       = google_container_cluster.gke.id
