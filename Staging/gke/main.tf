@@ -9,9 +9,7 @@ module "gke_staging" {
   cluster_name          = "pp-stg-1"
   master_ipv4_cidr_block = "192.168.1.0/28"
 }
-variable "gcp_credentials" {
-  type = string
-}
+
 
 resource "google_container_node_pool" "medium" {
   name       = "medium"
