@@ -40,11 +40,11 @@ resource "google_container_cluster" "gke" {
   node_locations           = var.zones
   deletion_protection      = false
 
-  private_cluster_config {
+  /*private_cluster_config {
     enable_private_nodes    = false
     enable_private_endpoint = false # Only control plane is private
-    master_ipv4_cidr_block  = "172.16.0.0/28"
-  }
+    //master_ipv4_cidr_block  = "172.16.0.0/28"
+  }*/
 
   cost_management_config {
     enabled = true
