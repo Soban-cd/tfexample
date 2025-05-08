@@ -1,7 +1,3 @@
-variable "GOOGLE_APPLICATION_CREDENTIALS" {
-  type = string
-  sensitive   = true
-}
 module "gke_staging" {
   source                = "../modules"
   project_id            = "dazzling-mantra-459111-n8"
