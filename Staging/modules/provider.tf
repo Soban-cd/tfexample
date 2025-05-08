@@ -1,3 +1,7 @@
+variable "GOOGLE_APPLICATION_CREDENTIALS" {
+  type = string
+  sensitive   = true
+}
 provider "google" {
   project = var.project_id
   region  = var.region
