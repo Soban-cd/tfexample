@@ -41,7 +41,3 @@ variable "master_ipv4_cidr_block" {
   description = "CIDR block for Kubernetes Master"
   type        = string
 }
-
-variable "GCP_CREDENTIALS" {
-  type = string
-}
