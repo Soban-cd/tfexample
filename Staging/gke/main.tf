@@ -1,3 +1,7 @@
+variable "GOOGLE_APPLICATION_CREDENTIALS" {
+  type = string
+  sensitive   = true
+}
 module "gke_staging" {
   source                = "../modules"
   project_id            = "dazzling-mantra-459111-n8"
@@ -8,7 +12,7 @@ module "gke_staging" {
   subnet_cidr           = "10.0.1.0/24"
   cluster_name          = "pp-stg-1"
   master_ipv4_cidr_block = "192.168.1.0/28"
-  GOOGLE_APPLICATION_CREDENTIALS = file("gcp_credentials.json")
+  GOOGLE_APPLICATION_CREDENTIALS = var.GOOGLE_APPLICATION_CREDENTIALS
 }
 
 
