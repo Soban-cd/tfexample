@@ -15,11 +15,11 @@ resource "google_container_node_pool" "medium" {
   name       = "medium"
   cluster    = module.gke_staging.cluster_id
   project    = module.gke_staging.project_id
-  node_count = 2
+  node_count = 1
 
   node_config {
     machine_type = "e2-medium"
-    disk_size_gb = 30
+    disk_size_gb = 20
     service_account = module.gke_staging.service_account
     oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform",
